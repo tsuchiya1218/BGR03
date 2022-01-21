@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+/********************************************
+	すべてのWebページに適用される 
+*********************************************/
+
+/* HTMLファイル全体のスタイル設定 */
+ html{
+	/* 文字フォントをゴシック体（sans-serif）に設定する */
+	font-family			:	sans-serif;
+}
+
+/* ページ表示のスタイル設定 */
+ body{
+	/* 背景色を#eeece9に設定する */
+	background-color	:	#ffdead;
+	
+ }
+ 
+ h1{
+	text-align: center;
+ }
+
+ #id{
+	float:right
+ }
+
+h2{
+	/*文字の大きさを150％に設定する*/
+	font-size  :  150%;
+	/*文字の色を#3f5170に設定する*/
+	color  : #3f5170;
+	/*下線3pxの#3f5170の点線に設定する*/
+	border-bottom  : 3px dotted #3f5170;
+	/*外側の余白を上下は20px、左右は0pxに設定する*/
+	margin: 20px 0px;
+	/*内側の余白を上下は5px、左右は5pxに設定する*/
+	padding: 5px;
+}
+
+p{
+	/*行の高さを1.6に設定する*/
+	line-height:  1.6;
+}
+
+
+
+/********************************************
+	すべてのWebページに適用される (ヘッダー)
+*********************************************/
+
+/* クラス(logo)のスタイル設定 */
+.logo{
+	/*文字を中央揃えに設定する*/
+	text-align	:	center;
+	/*外側の余白を上は50px、左右は0px、下は40pxに設定する*/
+	margin: 50px 0px 40px;
+}
+
+/*ナビゲーションの順不同リストのスタイル設定*/
+nav ul{
+	/*背景画像をmenu-bg.pngに設定する*/
+	background-image: url(../images/menu-bg.png) ;
+	/*背景画像を横軸の繰り返しに設定する*/
+	background-repeat:  repeat-x;
+	/*内側の余白を上は20px、右は10px、下は15px、左は20pxに設定する*/
+	padding: 20px 10px 15px 20px;
+}
+
+/* ナビゲーションのリンク（未訪問）のスタイル設定 */
+ nav a:link{
+	/*文字色を#3c454dに設定する*/
+	color	:	#3c454d;
+}
+
+/* ナビゲーションのリンク（訪問済み）のスタイル設定 */
+ nav a:visited{
+	/*文字色を#3c454dに設定する*/
+	color	:	#3c454d;
+}
+
+/* ナビゲーションのリンク（カーソルなどを重ねた）のスタイル設定 */
+ nav a:hover{/*文字色をpinkに設定する*/
+	color	:	pink;
+	/*すべての(hover)CSSプロパティを開始時は緩やかに1秒で変化させる*/
+	transition : all 1s ease;
+	/*背景色を#7fffd4に設定する*/
+	background-color : #7fffd4 ;
+}
+
+#wrap{
+	/*横幅を最大960pxに設定する*/
+	width:  960px;
+	/*外側の余白を上下は0px、左右は自動調整に設定する*/
+	margin : 20px auto;
+}
+
+
+nav ul{
+	/*黒丸を削除する*/
+	list-style-type : none;
+	/*2.デフォルトの余白を解除する*/
+	margin : 0px;
+	padding : 0px;
+	/*3.リンクを横並びにする*/
+	display : flex;
+}
+
+nav a{
+	/*リンクの下線を削除する*/
+	text-decoration : none;
+	/*リンクをブロックレベルに設定する*/
+	display : block;
+	/*内側の余白を上下は6px,左右は20pxに設定する*/
+	padding : 6px 20px;
+	/*外側の余白を上下は10px,左右は0pxに設定する*/
+	margin : 10px 0px;
+}
+a:hover{
+	/*文字色をpinkに設定する*/
+	color	:	pink;
+	/*すべての(hover)CSSプロパティを開始時は緩やかに1秒で変化させる*/
+	transition : all 1s ease;
+	/*背景色を#7fffd4に設定する*/
+	background-color : #7fffd4 ;
+}
+
+select{
+	/*横幅を30emに設定する*/
+	width	:	30em;
+}
+
+input[name="subject"]{
+	/*横幅を30emに設定する*/
+	width 	:	20em;
+}
+
+textarea{
+	/*横幅を30emに設定する*/
+	width	:	20em;
+	/*高さを6emに設定する*/
+	height	:	2em;
+}
+
+input[type="submit"]{
+	/*外側の余白を上下20px左右0px*/
+	margin	: 20px 0px;
+	/*横幅を30emに設定する*/
+	width	:	10em;
+	/*5pxの角丸に設定する*/
+	border-radius	:	5px;
+	/*太字に設定する*/
+	font-weight		:	700;
+	/*背景色をピンクに設定する*/
+	background-color	:pink;
+}
+
+/********************************************
+	すべてのWebページに適用される (フッター)
+*********************************************/
+footer{
+	/*背景画像をfooter-bg.pngに設定する*/
+	background-image: url(../images/footer-bg.png);
+	/*背景画像を繰り返さないに設定する*/
+	background-repeat: no-repeat;
+	/*文字色を#3f5170に設定する*/
+	color: #3f5170;
+	/*外側の余白を上のみ30pxに設定する*/
+	margin-top: 30px;
+	/*内側の余白を上は80px、右は15px、下は20px、左は15pxに設定する*/
+	padding: 80px 15px 20px;
+}
